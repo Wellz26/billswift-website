@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - BillSwift</title>
+    <meta name="description" content="Privacy Policy for BillSwift - Free Quotes & Invoices App for iOS">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="pics/logo.png">
+    <link rel="apple-touch-icon" href="pics/logo.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #4278D8;
+            --primary-dark: #3461B5;
+            --primary-light: #EBF1FC;
+            --accent: #F5A623;
+            --text: #1A1D26;
+            --text-secondary: #5C6370;
+            --text-muted: #8B92A5;
+            --bg: #FFFFFF;
+            --bg-subtle: #F8FAFC;
+            --border: #E2E8F0;
+            --success: #10B981;
+            --gradient-primary: linear-gradient(135deg, #4278D8 0%, #5B8DEF 50%, #7BA3F7 100%);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--bg);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .nav-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        .logo-text {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .logo-text span {
+            color: var(--accent);
+        }
+
+        .back-link {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--primary);
+        }
+
+        .back-link svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 120px 24px 80px;
+        }
+
+        .page-header {
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        .last-updated {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .intro-box {
+            background: var(--primary-light);
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 48px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .intro-box p {
+            font-size: 1.1rem;
+            color: var(--text);
+            margin: 0;
+        }
+
+        .intro-box strong {
+            color: var(--primary-dark);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-top: 48px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: var(--gradient-primary);
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        ul {
+            margin: 16px 0 24px;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 12px;
+            color: var(--text-secondary);
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #EBF1FC 0%, #E0E8F5 100%);
+            border-radius: 16px;
+            padding: 24px 28px;
+            margin: 32px 0;
+        }
+
+        .highlight-box h3 {
+            color: var(--primary-dark);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .highlight-box p {
+            color: var(--text);
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--bg-subtle);
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 64px;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .contact-section h2 {
+            justify-content: center;
+            margin-top: 0;
+        }
+
+        .contact-section h2::before {
+            display: none;
+        }
+
+        .contact-section p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .contact-email {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding: 14px 32px;
+            background: var(--gradient-primary);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(66, 120, 216, 0.3);
+        }
+
+        .contact-email:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(66, 120, 216, 0.4);
+        }
+
+        .contact-email svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text);
+            color: white;
+            padding: 40px 24px;
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 32px;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .copyright {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            main {
+                padding: 100px 20px 60px;
+            }
+
+            .intro-box {
+                padding: 24px;
+            }
+
+            .contact-section {
+                padding: 32px 24px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="pics/logo.png" alt="BillSwift Logo">
+                <span class="logo-text">Bill<span>Swift</span></span>
+            </a>
+            <a href="index.html" class="back-link">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last updated: January 2026</p>
+        </div>
+
+        <div class="intro-box">
+            <p><strong>Your privacy matters.</strong> BillSwift is designed with privacy at its core. We don't collect, store, or share any of your personal or business data. Everything stays on your device.</p>
+        </div>
+
+        <h2>Data Storage</h2>
+        <p>All your data—including your business profile, clients, items, quotes, and invoices—is stored <strong>locally on your device</strong> using Apple's secure storage mechanisms. We do not operate any servers that collect or store your information.</p>
+
+        <div class="highlight-box">
+            <h3>🔒 What This Means For You</h3>
+            <p>Your invoices, client details, and business information never leave your iPhone or iPad unless you explicitly choose to share or export them.</p>
+        </div>
+
+        <h2>iCloud Sync</h2>
+        <p>If you enable iCloud sync on your device, your BillSwift data may be synced across your Apple devices through your personal iCloud account. This synchronization is:</p>
+        <ul>
+            <li>Managed entirely by Apple</li>
+            <li>Protected by your Apple ID credentials</li>
+            <li>Subject to Apple's privacy policies</li>
+            <li>Optional and controlled by you</li>
+        </ul>
+        <p>We have no access to your iCloud data.</p>
+
+        <h2>No Analytics or Tracking</h2>
+        <p>BillSwift does not include:</p>
+        <ul>
+            <li>Analytics software</li>
+            <li>Tracking pixels or cookies</li>
+            <li>Usage monitoring</li>
+            <li>Crash reporting services</li>
+            <li>Advertising SDKs</li>
+        </ul>
+        <p>We don't know how you use the app, how often you open it, or what features you use. Your usage is completely private.</p>
+
+        <h2>No Third-Party Sharing</h2>
+        <p>Your data is never shared with third parties. BillSwift has:</p>
+        <ul>
+            <li>No advertisements</li>
+            <li>No in-app purchases</li>
+            <li>No partnerships that require data sharing</li>
+            <li>No monetization of user data</li>
+        </ul>
+
+        <h2>Permissions We Request</h2>
+        <p>BillSwift requests only one optional permission:</p>
+        <ul>
+            <li><strong>Photo Library Access</strong> — Only used if you choose to add a logo to your business profile. We access only the specific photo you select.</li>
+        </ul>
+        <p>This permission is optional. The app works fully without it.</p>
+
+        <h2>Data Export</h2>
+        <p>You can export all your data at any time using the Export feature in Settings. The exported JSON file contains your complete data and belongs entirely to you. We encourage regular backups.</p>
+
+        <h2>Data Deletion</h2>
+        <p>Since all data is stored locally on your device:</p>
+        <ul>
+            <li>Deleting the app removes all BillSwift data from your device</li>
+            <li>You can delete individual items within the app at any time</li>
+            <li>If using iCloud sync, data is also removed from iCloud when deleted</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>BillSwift is a business tool not directed at children under 13. We do not knowingly collect any information from children.</p>
+
+        <h2 id="terms">Terms of Service</h2>
+        <p>By using BillSwift, you agree to use the app for lawful purposes only. The app is provided "as is" without warranties of any kind. We are not responsible for any business decisions made based on documents created with the app.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>If we update this privacy policy, we will post the new version here with an updated date. Since we don't collect your contact information, we cannot notify you directly of changes.</p>
+
+        <div class="contact-section">
+            <h2>Questions?</h2>
+            <p>If you have any questions about this privacy policy or our practices, please contact us:</p>
+            <a href="mailto:support@billswift.com" class="contact-email">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                support@billswift.com
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="mailto:support@billswift.com">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2026 BillSwift. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
